@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -512,7 +513,15 @@
             transform: translateY(-3px);
         }
 
-        .prod-card .icon { font-size: 1.9rem; display: block; margin-bottom: 0.7rem; }
+        .prod-card .icon {
+            display: flex; align-items: center; justify-content: center;
+            width: 52px; height: 52px; margin: 0 auto 0.9rem;
+            border-radius: 50%;
+            background: var(--gold-muted);
+            border: 1px solid rgba(200,169,81,0.25);
+            color: var(--gold);
+            font-size: 1.25rem;
+        }
 
         .prod-card h4 {
             font-family: 'Inter', sans-serif; font-weight: 600;
@@ -1216,63 +1225,63 @@
         </div>
         <div class="prod-grid fade-up">
             <div class="prod-card">
-                <span class="icon">📹</span>
+                <div class="icon"><i class="fa-solid fa-video"></i></div>
                 <h4>CCTV Surveillance</h4>
             </div>
             <div class="prod-card">
-                <span class="icon">🔑</span>
+                <div class="icon"><i class="fa-solid fa-lock"></i></div>
                 <h4>Access Control &amp; Intercom</h4>
             </div>
             <div class="prod-card">
-                <span class="icon">👁️</span>
+                <div class="icon"><i class="fa-solid fa-eye"></i></div>
                 <h4>Virtual Guard Patrolling</h4>
             </div>
             <div class="prod-card">
-                <span class="icon">🔔</span>
+                <div class="icon"><i class="fa-solid fa-bell"></i></div>
                 <h4>Alarm Systems</h4>
             </div>
             <div class="prod-card">
-                <span class="icon">📱</span>
+                <div class="icon"><i class="fa-solid fa-mobile-screen"></i></div>
                 <h4>Mobile Surveillance</h4>
             </div>
             <div class="prod-card">
-                <span class="icon">🖥️</span>
+                <div class="icon"><i class="fa-solid fa-desktop"></i></div>
                 <h4>Command Center 24/7</h4>
             </div>
             <div class="prod-card">
-                <span class="icon">🌐</span>
+                <div class="icon"><i class="fa-solid fa-network-wired"></i></div>
                 <h4>Connectivity Infrastructure</h4>
             </div>
             <div class="prod-card">
-                <span class="icon">🚪</span>
+                <div class="icon"><i class="fa-solid fa-door-open"></i></div>
                 <h4>Remote Gate Release</h4>
             </div>
             <div class="prod-card">
-                <span class="icon">🚘</span>
+                <div class="icon"><i class="fa-solid fa-car"></i></div>
                 <h4>License Plate Whitelisting</h4>
             </div>
             <div class="prod-card">
-                <span class="icon">🏢</span>
+                <div class="icon"><i class="fa-solid fa-building"></i></div>
                 <h4>Smart Building Integration (IoT)</h4>
             </div>
             <div class="prod-card">
-                <span class="icon">😊</span>
+                <div class="icon"><i class="fa-solid fa-face-smile"></i></div>
                 <h4>Facial Recognition Attendance</h4>
             </div>
             <div class="prod-card">
-                <span class="icon">🤖</span>
+                <div class="icon"><i class="fa-solid fa-robot"></i></div>
                 <h4>Autonomous Security Robots</h4>
             </div>
             <div class="prod-card">
-                <span class="icon">📊</span>
+                <div class="icon"><i class="fa-solid fa-chart-area"></i></div>
                 <h4>Occupancy &amp; Crowd Heat Mapping</h4>
             </div>
             <div class="prod-card">
-                <span class="icon">🔧</span>
+                <div class="icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
                 <h4>Predictive Maintenance Systems</h4>
             </div>
             <div class="prod-card">
-                <span class="icon">📲</span>
+                <div class="icon"><i class="fa-solid fa-tablet-screen-button"></i></div>
                 <h4>Mobile App Security Management</h4>
             </div>
         </div>
