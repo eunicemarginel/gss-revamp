@@ -643,7 +643,15 @@
             box-shadow: 0 22px 50px rgba(0,0,0,0.35);
         }
 
-        .why-icon { font-size: 2.4rem; display: block; margin-bottom: 1.2rem; }
+        .why-icon {
+            display: flex; align-items: center; justify-content: center;
+            width: 54px; height: 54px; margin-bottom: 1.3rem;
+            border-radius: 50%;
+            background: var(--gold-muted);
+            border: 1px solid rgba(200,169,81,0.25);
+            color: var(--gold);
+            font-size: 1.3rem;
+        }
 
         .why-card h3 {
             font-family: 'Inter', sans-serif; font-size: 1.05rem;
@@ -1416,22 +1424,22 @@
         </div>
         <div class="why-grid fade-up">
             <div class="why-card">
-                <span class="why-icon">🛡️</span>
+                <div class="why-icon"><i class="fa-solid fa-shield-halved"></i></div>
                 <h3>Licensed &amp; Regulated</h3>
                 <p>PLRD licensed and SAS member. Every officer is Grade A certified. We operate within the highest regulatory standards — so you always have legal protection and complete peace of mind.</p>
             </div>
             <div class="why-card">
-                <span class="why-icon">🧠</span>
+                <div class="why-icon"><i class="fa-solid fa-microchip"></i></div>
                 <h3>Technology-Integrated</h3>
                 <p>We combine trained manpower with AI analytics, smart systems, and 24/7 remote monitoring. Technology amplifies our team — making every deployment smarter and more responsive.</p>
             </div>
             <div class="why-card">
-                <span class="why-icon">🌏</span>
+                <div class="why-icon"><i class="fa-solid fa-earth-asia"></i></div>
                 <h3>International Capability</h3>
                 <p>Our diverse team brings global experience from law enforcement, armed forces, and international operations — enabling seamless deployment across Singapore and internationally.</p>
             </div>
             <div class="why-card">
-                <span class="why-icon">🎯</span>
+                <div class="why-icon"><i class="fa-solid fa-bullseye"></i></div>
                 <h3>Strategic, Not Reactive</h3>
                 <p>Security is about planning and intelligence, not just presence. We assess, strategize, and implement outcomes-based solutions aligned to your specific risk profile and environment.</p>
             </div>
