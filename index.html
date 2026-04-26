@@ -586,7 +586,18 @@
             transform: translateY(-4px);
         }
 
-        .enf-card .icon { font-size: 2.4rem; display: block; margin-bottom: 1rem; }
+        .enf-card .icon {
+            display: flex; align-items: center; justify-content: center;
+            width: 56px; height: 56px; margin: 0 auto 1.1rem;
+            border-radius: 50%;
+            background: var(--gold-muted);
+            border: 1px solid rgba(200,169,81,0.25);
+            color: var(--gold);
+            font-size: 1.35rem;
+        }
+
+        .ind-tag i { color: var(--gold); margin-right: 0.45rem; transition: color 0.2s; }
+        .ind-tag:hover i { color: var(--gold-light); }
 
         .enf-card h3 {
             font-family: 'Inter', sans-serif; font-size: 0.95rem;
@@ -899,7 +910,7 @@
 
 <!-- Mobile Nav -->
 <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
-    <button class="mob-close" onclick="toggleMobileNav()" aria-label="Close">✕</button>
+    <button class="mob-close" onclick="toggleMobileNav()" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
     <a href="#services"    onclick="toggleMobileNav()">Services</a>
     <a href="#products"    onclick="toggleMobileNav()">Products</a>
     <a href="#ai-tech"     onclick="toggleMobileNav()">AI & Technology</a>
@@ -967,7 +978,7 @@
 <div class="trust-bar">
     <div class="trust-bar-inner">
         <div class="trust-item">
-            <div class="trust-icon">🛡️</div>
+            <div class="trust-icon"><i class="fa-solid fa-shield-halved"></i></div>
             <div class="trust-text">
                 <strong>PLRD Licensed</strong>
                 <span>Police Licensing & Regulatory Dept.</span>
@@ -975,7 +986,7 @@
         </div>
         <div class="trust-sep"></div>
         <div class="trust-item">
-            <div class="trust-icon">🏛️</div>
+            <div class="trust-icon"><i class="fa-solid fa-landmark"></i></div>
             <div class="trust-text">
                 <strong>SAS Member</strong>
                 <span>Security Association of Singapore</span>
@@ -983,7 +994,7 @@
         </div>
         <div class="trust-sep"></div>
         <div class="trust-item">
-            <div class="trust-icon">⭐</div>
+            <div class="trust-icon"><i class="fa-solid fa-star"></i></div>
             <div class="trust-text">
                 <strong>Grade A Officers</strong>
                 <span>Fully Licensed Personnel</span>
@@ -991,7 +1002,7 @@
         </div>
         <div class="trust-sep"></div>
         <div class="trust-item">
-            <div class="trust-icon">🌏</div>
+            <div class="trust-icon"><i class="fa-solid fa-earth-asia"></i></div>
             <div class="trust-text">
                 <strong>International Deployment</strong>
                 <span>Singapore &amp; Beyond</span>
@@ -999,7 +1010,7 @@
         </div>
         <div class="trust-sep"></div>
         <div class="trust-item">
-            <div class="trust-icon">🤖</div>
+            <div class="trust-icon"><i class="fa-solid fa-robot"></i></div>
             <div class="trust-text">
                 <strong>AI-Powered Security</strong>
                 <span>Smart Technology Integration</span>
@@ -1113,105 +1124,105 @@
         <!-- Additional services list -->
         <div class="svc-list fade-up">
             <div class="svc-item">
-                <div class="svc-item-icon">🏫</div>
+                <div class="svc-item-icon"><i class="fa-solid fa-school"></i></div>
                 <div>
                     <h4>School &amp; Campus Security</h4>
                     <span>Safe learning environments</span>
                 </div>
             </div>
             <div class="svc-item">
-                <div class="svc-item-icon">🔒</div>
+                <div class="svc-item-icon"><i class="fa-solid fa-tag"></i></div>
                 <div>
                     <h4>Retail Loss Prevention</h4>
                     <span>Deterring theft &amp; shrinkage</span>
                 </div>
             </div>
             <div class="svc-item">
-                <div class="svc-item-icon">🏗️</div>
+                <div class="svc-item-icon"><i class="fa-solid fa-helmet-safety"></i></div>
                 <div>
                     <h4>Construction Site Security</h4>
                     <span>Round-the-clock site protection</span>
                 </div>
             </div>
             <div class="svc-item">
-                <div class="svc-item-icon">🚗</div>
+                <div class="svc-item-icon"><i class="fa-solid fa-car"></i></div>
                 <div>
                     <h4>24/7 Mobile Security Patrols</h4>
                     <span>Mobile &amp; foot patrol services</span>
                 </div>
             </div>
             <div class="svc-item">
-                <div class="svc-item-icon">🛡️</div>
+                <div class="svc-item-icon"><i class="fa-solid fa-user-shield"></i></div>
                 <div>
                     <h4>Bodyguard Services</h4>
                     <span>Personal protection officers</span>
                 </div>
             </div>
             <div class="svc-item">
-                <div class="svc-item-icon">🏨</div>
+                <div class="svc-item-icon"><i class="fa-solid fa-bell-concierge"></i></div>
                 <div>
                     <h4>Security Concierge &amp; Front Desk</h4>
                     <span>Premium frontline presence</span>
                 </div>
             </div>
             <div class="svc-item">
-                <div class="svc-item-icon">💰</div>
+                <div class="svc-item-icon"><i class="fa-solid fa-vault"></i></div>
                 <div>
                     <h4>Cash-in-Transit Escort</h4>
                     <span>Valuables &amp; currency protection</span>
                 </div>
             </div>
             <div class="svc-item">
-                <div class="svc-item-icon">🚦</div>
+                <div class="svc-item-icon"><i class="fa-solid fa-traffic-light"></i></div>
                 <div>
                     <h4>Traffic Management &amp; Marshalling</h4>
                     <span>Event &amp; site traffic control</span>
                 </div>
             </div>
             <div class="svc-item">
-                <div class="svc-item-icon">💎</div>
+                <div class="svc-item-icon"><i class="fa-solid fa-gem"></i></div>
                 <div>
                     <h4>High-Value Asset Protection</h4>
                     <span>Specialized guarding</span>
                 </div>
             </div>
             <div class="svc-item">
-                <div class="svc-item-icon">🏥</div>
+                <div class="svc-item-icon"><i class="fa-solid fa-hospital"></i></div>
                 <div>
                     <h4>Hospital &amp; Healthcare Security</h4>
                     <span>Sensitive environment experts</span>
                 </div>
             </div>
             <div class="svc-item">
-                <div class="svc-item-icon">⛪</div>
+                <div class="svc-item-icon"><i class="fa-solid fa-place-of-worship"></i></div>
                 <div>
                     <h4>Religious Institution Security</h4>
                     <span>Protecting houses of worship</span>
                 </div>
             </div>
             <div class="svc-item">
-                <div class="svc-item-icon">✈️</div>
+                <div class="svc-item-icon"><i class="fa-solid fa-plane"></i></div>
                 <div>
                     <h4>Airport Escort</h4>
                     <span>Professional aviation security</span>
                 </div>
             </div>
             <div class="svc-item">
-                <div class="svc-item-icon">⏱️</div>
+                <div class="svc-item-icon"><i class="fa-solid fa-clock"></i></div>
                 <div>
                     <h4>Temporary / Short-term Guarding</h4>
                     <span>Flexible rapid deployment</span>
                 </div>
             </div>
             <div class="svc-item">
-                <div class="svc-item-icon">🔬</div>
+                <div class="svc-item-icon"><i class="fa-solid fa-bug"></i></div>
                 <div>
                     <h4>Bug Sweeping (TSCM)</h4>
                     <span>Counter-surveillance sweeps</span>
                 </div>
             </div>
             <div class="svc-item">
-                <div class="svc-item-icon">🔍</div>
+                <div class="svc-item-icon"><i class="fa-solid fa-fingerprint"></i></div>
                 <div>
                     <h4>Fingerprinting Analysis</h4>
                     <span>Forensic identification services</span>
@@ -1313,28 +1324,28 @@
                 </p>
                 <div class="ai-features">
                     <div class="ai-feat">
-                        <div class="ai-feat-icon">☁️</div>
+                        <div class="ai-feat-icon"><i class="fa-solid fa-cloud"></i></div>
                         <div>
                             <h4>Video Surveillance as a Service (VSaaS)</h4>
                             <p>Cloud-based surveillance management with remote access, intelligent storage, and real-time monitoring from anywhere in the world.</p>
                         </div>
                     </div>
                     <div class="ai-feat">
-                        <div class="ai-feat-icon">🧠</div>
+                        <div class="ai-feat-icon"><i class="fa-solid fa-brain"></i></div>
                         <div>
                             <h4>AI Human &amp; Vehicle Detection Analytics</h4>
                             <p>Deep-learning algorithms accurately detect and classify humans and vehicles — eliminating false alarms and improving response speed.</p>
                         </div>
                     </div>
                     <div class="ai-feat">
-                        <div class="ai-feat-icon">⚠️</div>
+                        <div class="ai-feat-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
                         <div>
                             <h4>Loitering &amp; Intrusion AI Alerts</h4>
                             <p>Automated real-time alerts when suspicious behavior or unauthorized access is detected — before incidents escalate.</p>
                         </div>
                     </div>
                     <div class="ai-feat">
-                        <div class="ai-feat-icon">📡</div>
+                        <div class="ai-feat-icon"><i class="fa-solid fa-satellite-dish"></i></div>
                         <div>
                             <h4>Central Remote Monitoring (24/7)</h4>
                             <p>Command center oversight with trained operators and AI-assisted threat triage for rapid deployment and response.</p>
@@ -1358,27 +1369,27 @@
         </div>
         <div class="enf-grid fade-up">
             <div class="enf-card">
-                <span class="icon">📋</span>
+                <div class="icon"><i class="fa-solid fa-clipboard-list"></i></div>
                 <h3>Security Risk Assessment &amp; Audits</h3>
                 <p>Comprehensive vulnerability analysis and security auditing to identify and mitigate threats before they materialize.</p>
             </div>
             <div class="enf-card">
-                <span class="icon">🚗</span>
+                <div class="icon"><i class="fa-solid fa-circle-stop"></i></div>
                 <h3>Private Property Wheel Clamping</h3>
                 <p>Licensed wheel clamping services for private property owners to enforce parking regulations effectively and legally.</p>
             </div>
             <div class="enf-card">
-                <span class="icon">📝</span>
+                <div class="icon"><i class="fa-solid fa-file-contract"></i></div>
                 <h3>Outcome-Based Contract (OBC) Consultancy</h3>
                 <p>Strategic security consultancy focused on measurable outcomes, helping organizations optimize their security investment.</p>
             </div>
             <div class="enf-card">
-                <span class="icon">🔍</span>
+                <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
                 <h3>Private Investigation</h3>
                 <p>Discreet, professional investigation services for corporate due diligence, fraud detection, and legal support.</p>
             </div>
             <div class="enf-card">
-                <span class="icon">⚡</span>
+                <div class="icon"><i class="fa-solid fa-bolt"></i></div>
                 <h3>Red Teaming (Physical Breach Testing)</h3>
                 <p>Simulated physical security attacks to expose real vulnerabilities in your premises before adversaries do.</p>
             </div>
@@ -1396,19 +1407,19 @@
             <div class="gold-rule center"></div>
         </div>
         <div class="ind-wrap fade-up">
-            <span class="ind-tag">🏫&nbsp; Schools &amp; Education</span>
-            <span class="ind-tag">🛍️&nbsp; Retail</span>
-            <span class="ind-tag">🏭&nbsp; Manufacturing</span>
-            <span class="ind-tag">🏥&nbsp; Healthcare</span>
-            <span class="ind-tag">👮&nbsp; Law Enforcement Support</span>
-            <span class="ind-tag">🏦&nbsp; Banking &amp; Finance</span>
-            <span class="ind-tag">🏨&nbsp; Hotels &amp; Resorts</span>
-            <span class="ind-tag">🏢&nbsp; Commercial Real Estate</span>
-            <span class="ind-tag">🏠&nbsp; Property Management</span>
-            <span class="ind-tag">📦&nbsp; Logistics</span>
-            <span class="ind-tag">🏘️&nbsp; Dormitories</span>
-            <span class="ind-tag">🎪&nbsp; Exhibitions &amp; Trade Shows</span>
-            <span class="ind-tag">✈️&nbsp; Aviation</span>
+            <span class="ind-tag"><i class="fa-solid fa-school"></i> Schools &amp; Education</span>
+            <span class="ind-tag"><i class="fa-solid fa-bag-shopping"></i> Retail</span>
+            <span class="ind-tag"><i class="fa-solid fa-industry"></i> Manufacturing</span>
+            <span class="ind-tag"><i class="fa-solid fa-hospital"></i> Healthcare</span>
+            <span class="ind-tag"><i class="fa-solid fa-user-shield"></i> Law Enforcement Support</span>
+            <span class="ind-tag"><i class="fa-solid fa-building-columns"></i> Banking &amp; Finance</span>
+            <span class="ind-tag"><i class="fa-solid fa-hotel"></i> Hotels &amp; Resorts</span>
+            <span class="ind-tag"><i class="fa-solid fa-building"></i> Commercial Real Estate</span>
+            <span class="ind-tag"><i class="fa-solid fa-house"></i> Property Management</span>
+            <span class="ind-tag"><i class="fa-solid fa-box"></i> Logistics</span>
+            <span class="ind-tag"><i class="fa-solid fa-house-chimney"></i> Dormitories</span>
+            <span class="ind-tag"><i class="fa-solid fa-tent"></i> Exhibitions &amp; Trade Shows</span>
+            <span class="ind-tag"><i class="fa-solid fa-plane"></i> Aviation</span>
         </div>
     </div>
 </section>
@@ -1458,21 +1469,21 @@
             <p class="contact-info-col">Ready to elevate your security posture? Our consultants are available to assess your needs and provide a tailored security proposal — at no obligation.</p>
             <div class="cdet-list">
                 <div class="cdet">
-                    <div class="cdet-icon">📞</div>
+                    <div class="cdet-icon"><i class="fa-solid fa-phone"></i></div>
                     <div class="cdet-text">
                         <strong>Phone</strong>
                         <span>+65 8021 0471</span>
                     </div>
                 </div>
                 <div class="cdet">
-                    <div class="cdet-icon">✉️</div>
+                    <div class="cdet-icon"><i class="fa-solid fa-envelope"></i></div>
                     <div class="cdet-text">
                         <strong>Email</strong>
                         <span>Info@golden-shield.com.sg</span>
                     </div>
                 </div>
                 <div class="cdet">
-                    <div class="cdet-icon">📍</div>
+                    <div class="cdet-icon"><i class="fa-solid fa-location-dot"></i></div>
                     <div class="cdet-text">
                         <strong>Address</strong>
                         <span>20 Sin Ming Lane #04-67<br>Singapore 573968</span>
@@ -1569,8 +1580,8 @@
     <div class="footer-bottom">
         <p>&copy; 2025 Golden Shield Security Services Pte Ltd. All rights reserved.</p>
         <div class="f-badges">
-            <span class="f-badge">✓ PLRD Licensed</span>
-            <span class="f-badge">✓ SAS Member</span>
+            <span class="f-badge"><i class="fa-solid fa-check"></i> PLRD Licensed</span>
+            <span class="f-badge"><i class="fa-solid fa-check"></i> SAS Member</span>
         </div>
     </div>
 </footer>
